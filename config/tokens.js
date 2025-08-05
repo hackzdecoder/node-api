@@ -2,8 +2,8 @@ import crypto from "crypto";
 import bcrypt from "bcrypt";
 
 export async function verify(token, hash) {
-    const [, plainText] = token.split('|');
-    return bcrypt.compare(plainText, hash);
+    const [, tokenID] = token.split('|');
+    return bcrypt.compare(tokenID, hash);
 };
 
 export function hash() {
