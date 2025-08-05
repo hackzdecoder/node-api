@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@app/controllers/*": ["app/controllers/*"],
+      "@app/models/*": ["app/models/*"],
+      "@config/*": ["config/*"],
+      "@migrations/*": ["migrations/*"],
+      "@routes/*": ["routes/*"]
+    }
+  },
+  "include": ["."]
+}
